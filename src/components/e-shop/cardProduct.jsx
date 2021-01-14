@@ -1,6 +1,6 @@
 const CardProduct = (props) => {
+  const { product } = props;
   const { productCategory, productName, productImage, salePrice } = product;
-  const { onAddProduct, product } = props;
 
   return (
     <div className="card" style={{ width: "18rem" }}>
@@ -22,7 +22,5 @@ const CardProduct = (props) => {
     </div>
   );
 };
-
-
 
 export default CardProduct;

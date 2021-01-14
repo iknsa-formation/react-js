@@ -18,8 +18,8 @@ const Panier = (props) => {
       </div>
       <h2>Panier</h2>
       {products.slice(0, 5).map(({ productId }, index) => (
-        <div>
-          <p key={index}>Nombre d'items : {productId}</p>
+        <div key={index}>
+          <p>Nombre d'items : {productId}</p>
           <p>total:</p>
         </div>
       ))}

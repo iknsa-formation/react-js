@@ -6,7 +6,7 @@ import { products } from "./data/products";
 
 class Root extends Component {
   state = {
-    products: { products },
+    products: products,
     current: 0,
   };
 
@@ -34,8 +34,8 @@ class Root extends Component {
     return (
       <React.Fragment>
         <Panier
-        current={this.state.current}
-        products={this.state.products}
+          current={this.state.current}
+          products={this.state.products}
         ></Panier>
         <br />
         {componentsToRender}
