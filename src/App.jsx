@@ -1,8 +1,8 @@
 // src/App.jsx
 import React, { Component } from "react";
-import Card from "./components/card";
-import List from "./components/list";
-import NewChickForm from "./components/newChickForm";
+import Card from "./components/chicken/card";
+import List from "./components/chicken/list";
+import NewChickForm from "./components/chicken/newChickForm";
 
 class App extends Component {
   state = {

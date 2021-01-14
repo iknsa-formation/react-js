@@ -1,8 +1,8 @@
-// src/components/card.jsx
+// src/components/chicken/card.jsx
 import React from "react";
 
 const Card = (props) => {
-  const { onChickChange, current, chick } = props;
+  const { onChickChange, chick } = props;
   const { imgUrl, race, type } = chick;
 
   return (
@@ -11,9 +11,9 @@ const Card = (props) => {
       <div className="card-body">
         <h5 className="card-title">{race}</h5>
         <p className="card-text">est une poule {type}</p>
-        <a href="#" onClick={onChickChange} className="btn btn-primary">
+        <button onClick={onChickChange} className="btn btn-primary">
           Next
-        </a>
+        </button>
       </div>
     </div>
   );
