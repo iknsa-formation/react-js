@@ -11,16 +11,15 @@ const CardProduct = (props) => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
-        <ul>
-          <li className="list-group-item"> {productCategory}</li>
-          <li className="list-group-item"> {salePrice}</li>
-        </ul>
-        <button onClick className="btn btn-success">
+        <div className="list-group-item"> {productCategory}</div>
+        <div className="list-group-item"> {salePrice}</div>
+        <button type="submit" className="btn btn-success">
           Ajouter
         </button>
       </div>
     </div>
   );
+
 };
 
 export default CardProduct;

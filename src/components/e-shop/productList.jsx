@@ -7,7 +7,7 @@ const ProductList = (props) => {
   return (
     <div>
       <ul className="list-group">
-        {props.products.map((product, index) => (
+        {props.products.slice(0,5).map((product, index) => (
           <ProductListItem
             key={index}
             index={index}

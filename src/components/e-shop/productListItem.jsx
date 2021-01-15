@@ -1,5 +1,3 @@
-import { Component } from "react";
-import { products } from "../../data/products";
 
 
 const ProductListItem = (props) => {
